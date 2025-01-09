@@ -1,12 +1,73 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    axe-core-api (4.10.2)
+      dumb_delegator
+      ostruct
+      virtus
+    axe-core-rspec (4.10.2)
+      axe-core-api (= 4.10.2)
+      dumb_delegator
+      ostruct
+      virtus
+    axe-core-selenium (4.10.2)
+      axe-core-api (= 4.10.2)
+      dumb_delegator
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    base64 (0.2.0)
+    bigdecimal (3.1.9)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    date (3.4.1)
+    debug (1.10.0)
+      irb (~> 1.10)
+      reline (>= 0.3.8)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    dumb_delegator (1.1.0)
+    ice_nine (0.11.2)
+    io-console (0.8.0)
+    irb (1.14.3)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
+    logger (1.6.4)
+    ostruct (0.6.1)
+    psych (5.2.2)
+      date
+      stringio
+    rdoc (6.10.0)
+      psych (>= 4.0.0)
+    reline (0.6.0)
+      io-console (~> 0.5)
+    rexml (3.4.0)
+    rubyzip (2.4.1)
+    selenium-webdriver (4.27.0)
+      base64 (~> 0.2)
+      logger (~> 1.4)
+      rexml (~> 3.2, >= 3.2.5)
+      rubyzip (>= 1.2.2, < 3.0)
+      websocket (~> 1.0)
+    stringio (3.1.2)
+    thread_safe (0.3.6)
+    virtus (2.0.0)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+    websocket (1.2.11)
 
 PLATFORMS
   arm64-darwin-23
   ruby
 
 DEPENDENCIES
+  axe-core-rspec
+  axe-core-selenium
+  bigdecimal
+  debug
+  selenium-webdriver
 
 BUNDLED WITH
    2.6.2

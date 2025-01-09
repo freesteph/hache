@@ -1,31 +1,12 @@
-* Ruby + Docker template
+* Hache : running Axe in Docker
 
-[[https://github.com/freesteph/ruby-docker-template/raw/main/logo.png]]
+A simple demo that instantiates a headless Firefox in Docker and runs
+an [[https://github.com/dequelabs/axe-core][Axe]] audit on it, using the relevant [[https://github.com/dequelabs/axe-core-gems][axe gems]].
 
-This starter kit provides a containerized Ruby environment to get
-hacking quickly without being a dirty dog.
+It needs https://github.com/dequelabs/axe-core-gems/pull/429 to work.
 
-The Dockerfile is configured to run ~bundle exec ruby main.rb~.
+** Usage
 
-** Getting started
-
-1. Clone this repo with a different name (or use the GitHub "Use this
-   template" feature):
-
-  #+begin_src sh
-  git clone https://github.com/freesteph/ruby-docker-template.git your-fancy-hack
-  #+end_src
-
-2. Hack away
-
-  #+begin_src sh
-  emacs main.rb
-  #+end_src
-
-3. Run things in an environement that will work for *other* people:
-
-   #+begin_src sh
-   make up
-   #+end_src
-
-See the [[file:Makefile][Makefile]] for other ways to interact with your project.
+#+begin_src sh
+make up
+#+end_src

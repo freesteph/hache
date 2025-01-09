@@ -1,6 +1,6 @@
 FROM ruby:3.4.1-slim
 
-RUN apt-get update && apt-get install -y --no-install-recommends nodejs npm
+RUN apt-get update && apt-get install -y --no-install-recommends firefox-esr build-essential nodejs npm
 
 WORKDIR /app
 
